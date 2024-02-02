@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+* {
+    padding: 0;
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    background-color: #F5F7F8;
+    font-family: 'Fira Code', monospace;
+}
+
+h2{
+    font-size: 1.7rem;
+    color: #495E57;;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+    color: #495E57;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+main{
+    margin: 20px 100px;
+}
+
+.articulo{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 55vh;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.articulo .imgProductos{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    place-content: center;
+    place-items: center;
+    height: 50vh;
+}
+
+.articulo .imgProductos .angulos{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-content: space-around;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.articulo .imgProductos .angulos .imgAngulo{
+    object-fit: contain;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid rgb(201, 198, 198);
+    border-radius: 10px;
+}
+
+.articulo .imgProductos .angulos .imgAngulo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.articulo .imgProductos .principal{
+    height: 46vh;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid rgb(201, 198, 198);
+}
+
+.articulo .imgProductos .principal .imgPrincipal{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.articulo .descripcionProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcionProducto .precios{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.descripcionProducto .estrellas{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.descripcionProducto .estrellas i{
+    color: #495E57;
+    font-size: 1.4rem;
+}
+
+.descripcionProducto .descripcion{
+    text-align: center;
+}
+
+.descripcionProducto .precios{
+    letter-spacing: 2px;
+}
+
+.descripcionProducto .btnObtener button{
+    font-family: 'Fira Code', monospace;
+    background-color: #495E57;
+    padding: 10px 30px;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    transition: all 1s ease;
+}
+.descripcionProducto .btnObtener button:hover{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    background-color: #45474B;
+    border-radius: 8px;
+    cursor: pointer;
+}
