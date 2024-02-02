@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
-
+/* paleta de colores https://colorhunt.co/palette/f5f7f8f4ce14495e5745474b */
 * {
     padding: 0;
     font-size: 15px;
@@ -38,10 +38,9 @@ main{
 }
 
 .articulo{
-    border: 1px solid red;
     background-color: white;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
+    flex-direction: row;
     height: 55vh;
     width: 100%;
     border-radius: 10px;
@@ -52,12 +51,12 @@ main{
 }
 
 .articulo .imgProductos{
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 4fr;
     place-content: center;
     place-items: center;
     height: 50vh;
+    width: 60vw;
 }
 
 .articulo .imgProductos .angulos{
@@ -99,7 +98,7 @@ main{
 }
 
 .articulo .descripcionProducto{
-    border: 1px solid blue;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +120,7 @@ main{
 
 .descripcionProducto .estrellas i{
     color: #495E57;
+    color: #F4CE14;
     font-size: 1.4rem;
 }
 
@@ -134,16 +134,56 @@ main{
 
 .descripcionProducto .btnObtener button{
     font-family: 'Fira Code', monospace;
-    background-color: #495E57;
+    background-color: #F4CE14;
     padding: 10px 30px;
     border-radius: 2px;
-    color: white;
+    color: black;
     border: none;
     transition: all 1s ease;
 }
 .descripcionProducto .btnObtener button:hover{
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-    background-color: #45474B;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #FDE767;
     border-radius: 8px;
     cursor: pointer;
+}
+
+@media(max-width: 560px){
+    
+    main{
+        margin: 20px 10px;
+    }
+
+    .articulo{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0px;
+        box-sizing: border-box;
+        margin-bottom: 40px 0;
+    }
+
+    .articulo .imgProductos{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        place-content: center;
+        place-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .articulo .imgProductos .angulos .imgAngulo{
+        object-fit: contain;
+        width: 80%;
+    }
+
+    /* descripción */
+    .articulo .descripcionProducto{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
 }
