@@ -38,6 +38,7 @@ main{
 }
 
 .articulo{
+    border: 1px solid red;
     background-color: white;
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -51,6 +52,7 @@ main{
 }
 
 .articulo .imgProductos{
+    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 4fr;
     place-content: center;
@@ -97,6 +99,7 @@ main{
 }
 
 .articulo .descripcionProducto{
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
