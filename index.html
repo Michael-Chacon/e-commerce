@@ -14,6 +14,33 @@
     <header>
       <nav>Menu</nav>
     </header>
+    <dialog id="dialog">
+      <section>
+        <img class="imgDialog" src="storage/img/aMain.jpg" alt="telescopio" />
+        <div class="nombreStart">
+          <h4>Nombre del producto</h4>
+          <span class="stars"
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i
+            ><i class="bx bx-star"></i
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolorem!
+        </p>
+        <div class="preciosDialog">
+          <h4>$ 100.000</h4>
+          <del> $99.99</del>
+        </div>
+        <form action="#">
+          <input type="number" name="cantidad" placeholder="Cantidad" />
+          <button type="text" class="submit">Agregar</button>
+        </form>
+        <button id="hide">Cerrar</button>
+      </section>
+    </dialog>
+    <!-- <button id="show">Mostrar modal</button> -->
     <main>
       <article class="articulo">
         <section class="imgProductos">
@@ -68,7 +95,7 @@
             <span><del class="precioViejo">$99.99</del></span>
           </div>
           <div class="btnObtener">
-            <button>Obtener</button>
+            <button id="show">Obtener</button>
           </div>
         </section>
       </article>
@@ -134,5 +161,6 @@
     <footer>
       <p>Footer</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

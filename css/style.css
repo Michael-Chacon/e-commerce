@@ -19,6 +19,10 @@ h2{
 h3{
     font-size: 1.5rem;
 }
+h4{
+    font-size: 1.1rem;
+    margin: 0;
+}
 
 p{
     font-size: 1rem;
@@ -119,7 +123,7 @@ main{
 }
 
 .descripcionProducto .estrellas i{
-    color: #495E57;
+    /* color: #495E57; */
     color: #F4CE14;
     font-size: 1.4rem;
 }
@@ -148,8 +152,88 @@ main{
     cursor: pointer;
 }
 
+/* Ventana modal */
+
+dialog{
+    border: none;
+    border-radius: 10px;
+    width: 25vw;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+dialog section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+dialog section .stars{
+    color: #F4CE14;
+}
+
+dialog img{
+    width: 60%;
+    object-fit: contain;
+}
+
+dialog section .preciosDialog{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+dialog section form .submit{
+    padding: 6px;
+    background-color: #F4CE14;
+    border: none;
+    transition: all 1s ease;
+}
+
+dialog section form {
+    margin-bottom: 10px;
+}
+
+dialog section form .submit:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #FDE767;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+dialog section form .submit, input{
+    padding: 6px;
+}
+
+dialog section form  input{
+    border: 1px solid #495E57;
+    width: 60%;
+}
+
+dialog #hide {
+    background-color: #495E57;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease
+}
+
+dialog #hide:hover {
+    background-color: #45474B;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+   
+}
+
 @media(max-width: 560px){
-    
+
     main{
         margin: 20px 10px;
     }
@@ -185,5 +269,14 @@ main{
         width: 100%;
         margin-bottom: 10px;
     }
-    
+
+    dialog{
+        border: none;
+        border-radius: 10px;
+        width: 80vw;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
 }
