@@ -5,6 +5,11 @@
     font-size: 15px;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10vh;
+}
+
 body{
     margin: 0;
     background-color: #F5F7F8;
@@ -65,6 +70,10 @@ header i{
     transition: color 800ms ease
 }
 
+header .btnMenu{
+    display: none;
+}
+
 header nav{
     display: flex;
     flex-direction: row;
@@ -114,6 +123,8 @@ header i:hover{
 
 dialog{
     border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Carrito de compras */
@@ -350,12 +361,10 @@ main{
 
 .dialogDetalle{
     border: none;
-    border-radius: 10px;
     width: 25vw;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 dialog section{
@@ -430,7 +439,7 @@ dialog #hide:hover {
 @media(max-width: 560px){
 
     main{
-        margin: 20px 10px;
+        margin: 12vh 10px;
     }
 
     .articulo{
@@ -523,6 +532,48 @@ dialog #hide:hover {
         height: 10vh;
         width: 80%;
   
+    }
+
+    header .btnMenu{
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        margin-bottom: 10vh;
+    }
+
+    header .menu{
+        background-color: #45474B;
+        font-weight: 900;
+        position: absolute;
+        flex-direction: column;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        margin: 0;
+        position: fixed;
+        overflow-y: scroll;
+        transform: translateX(-300%);
+        transition: transform 0.3s;
+    }
+
+    .menu.active{
+        transform: translateX(0);
+    }
+
+    header .menu a{
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        padding: 20px 0px;
+        
+    }
+    header nav a:hover{
+        /* outline: 1px solid #495E57; */
+        background-color: initial;
     }
 
 }
