@@ -19,6 +19,7 @@ h2{
 h3{
     font-size: 1.5rem;
 }
+
 h4{
     font-size: 1.1rem;
     margin: 0;
@@ -29,13 +30,205 @@ p{
     color: #495E57;
 }
 
+body::-webkit-scrollbar {
+    width: 10px 
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #495E57;
+    border-radius: 6px;
+}
+
 header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 10vh;
     width: 100%;
     color: black;
     background-color: white;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 15px 15px 15px 0;
+    box-sizing: border-box;
 }
+
+header i{
+    margin-left: 15px;
+    font-size: 30px;
+    color: #F4CE14;
+    transition: color 800ms ease
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    overflow-x: scroll;
+}
+
+nav::-webkit-scrollbar {
+    height:10px 
+}
+
+nav::-webkit-scrollbar-track {
+    background: #fde66750;
+    border-radius: 2px;
+    border: 1px solid #F4CE14
+}
+
+nav::-webkit-scrollbar-thumb {
+    background: #495E57;
+    border-radius: 2px;
+}
+
+header nav a{
+    width: 100%;
+    padding: 10px 50px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #495E57;
+    transition: all 0.5s ease;
+}
+
+header nav a:hover{
+    outline: 1px solid #495E57;
+    background-color: #F5F7F8;
+    border-radius: 5px;
+}
+
+sup{
+    color: #495E57;
+}
+
+header i:hover{
+    cursor: pointer;
+    color: #FDE767;  
+}
+
+dialog{
+    border: none;
+}
+
+/* Carrito de compras */
+
+.dialogCar .content{
+    width:40vw;
+    height: 80vh;
+    border: none;
+    
+}
+
+.dialogCar .content i{
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: color 0.5s ease;
+}
+
+.dialogCar .content i:hover{
+   cursor: pointer;
+}
+
+.dialogCar h2{
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.allCar{
+    box-sizing: border-box;
+    padding-top: 110px;
+    height: 71%;
+    width: 95%;
+    gap: 8px;
+    overflow-y: scroll;
+}
+
+.content .articuloCar{
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content .articuloCar i{
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    top: 10px;
+    color: red;
+    transition: font-size 0.3s linear;
+}
+
+.content .articuloCar i:hover{
+    font-size: 21px;
+}
+
+.dialogCar .content .articuloCar .imgProductCar{
+    width: 200px;
+    height:80px;
+    object-fit: contain;
+}
+
+.dialogCar .content .articuloCar .infoProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.dialogCar .content .articuloCar .infoProducto .cantPrecio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dialogCar .content .articuloCar .cantPrecio input{
+    width: 40px;
+    
+}
+
+.dialogCar .content .total{
+    padding: 0px 20px;
+    margin-top: 5px;
+    border: 1px solid #45474B;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.dialogCar .content .total .cancelar button{
+    border: none;
+    background-color: #F4CE14;
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.dialogCar .content .total .cancelar button:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #FDE767;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 
 main{
     margin: 20px 100px;
@@ -145,6 +338,7 @@ main{
     border: none;
     transition: all 1s ease;
 }
+
 .descripcionProducto .btnObtener button:hover{
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
     background-color: #FDE767;
@@ -154,13 +348,14 @@ main{
 
 /* Ventana modal */
 
-dialog{
+.dialogDetalle{
     border: none;
     border-radius: 10px;
     width: 25vw;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 dialog section{
@@ -270,13 +465,64 @@ dialog #hide:hover {
         margin-bottom: 10px;
     }
 
-    dialog{
+    .dialogDetalle{
         border: none;
         border-radius: 10px;
         width: 80vw;
         padding: 10px;
         box-sizing: border-box;
         text-align: center;
+    }
+
+    .dialogCar .content{
+        margin-left: 0px;
+        width:95vw;
+        height: 90vh;
+        border: none;
+        
+    }
+
+    .allCar{
+        margin-left: -20px;
+        box-sizing: border-box;
+        padding-top: 110px;
+        height: 71%;
+        width: 90%;
+        /* gap: 8px; */
+        overflow-y: scroll;
+    }
+    
+    .content .articuloCar{
+        width: 90%;
+        display: flex;
+        border-radius: 10px;
+        height: 80px;
+        position: relative;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .content .articuloCar i{
+        position: absolute;
+        font-size: 20px;
+        left: 5px;
+        top: 5px;
+        color: red;
+        transition: font-size 0.3s linear;
+    }
+
+    .dialogCar .content .articuloCar .imgProductCar{
+        width: 150px;
+        height:80px;
+        object-fit: contain;
+    }
+
+    .dialogCar .content .total{
+        margin-left: -15px;
+        margin-top: 20px;
+        border: 1px solid #45474B;
+        height: 10vh;
+        width: 80%;
+  
     }
 
 }

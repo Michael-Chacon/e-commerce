@@ -12,9 +12,125 @@
   </head>
   <body>
     <header>
-      <nav>Menu</nav>
+      <nav>
+        <a href="">Telescopios</a>
+        <a href="">producto</a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+        <a href="">producto </a>
+      </nav>
+      <div>
+        <i class="bx bxs-cart" id="mostrar"><sup>3</sup></i>
+      </div>
     </header>
-    <dialog id="dialog">
+
+    <dialog class="dialogCar" id="car">
+      <section class="content">
+        <i id="cerrar" class="bx bx-x"></i>
+        <h2>Detalles</h2>
+        <section class="allCar">
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto 1</h4>
+              <div class="cantPrecio">
+                <input type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="total">
+          <h3>Total:</h3>
+          <div class="cancelar">
+            <h4>$100.000</h4>
+            <button>Pagar</button>
+          </div>
+        </section>
+      </section>
+    </dialog>
+
+    <dialog class="dialogDetalle" id="dialog">
       <section>
         <img class="imgDialog" src="storage/img/aMain.jpg" alt="telescopio" />
         <div class="nombreStart">
@@ -34,13 +150,18 @@
           <del> $99.99</del>
         </div>
         <form action="#">
-          <input type="number" name="cantidad" placeholder="Cantidad" />
+          <input
+            type="number"
+            value="3"
+            name="cantidad"
+            placeholder="Cantidad"
+          />
           <button type="text" class="submit">Agregar</button>
         </form>
         <button id="hide">Cerrar</button>
       </section>
     </dialog>
-    <!-- <button id="show">Mostrar modal</button> -->
+
     <main>
       <article class="articulo">
         <section class="imgProductos">
@@ -100,34 +221,34 @@
         </section>
       </article>
 
-      <!-- <article class="articulo">
+      <article class="articulo">
         <section class="imgProductos">
           <div class="angulos">
             <img
               class="imgAngulo"
-              src="storage/img/bMain.jpg"
+              src="storage/img/aMain.jpg"
               alt="angulos del producto"
             />
             <img
               class="imgAngulo"
-              src="storage/img/b1.jpg"
+              src="storage/img/a1.jpg"
               alt="angulos del producto"
             />
             <img
               class="imgAngulo"
-              src="storage/img/b2.jpg"
+              src="storage/img/a2.jpg"
               alt="angulos del producto"
             />
             <img
               class="imgAngulo"
-              src="storage/img/b3.jpg"
+              src="storage/img/a3.jpg"
               alt="angulos del producto"
             />
           </div>
           <div class="principal">
             <img
               class="imgPrincipal"
-              src="storage/img/bMain.jpg"
+              src="storage/img/aMain.jpg"
               alt="Imagen principal"
             />
           </div>
@@ -153,10 +274,10 @@
             <span><del class="precioViejo">$99.99</del></span>
           </div>
           <div class="btnObtener">
-            <button>Obtener</button>
+            <button id="">Obtener</button>
           </div>
         </section>
-      </article> -->
+      </article>
     </main>
     <footer>
       <p>Footer</p>
