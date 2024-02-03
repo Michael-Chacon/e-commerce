@@ -469,11 +469,13 @@ dialog #hide:hover {
     }
 
     /* descripción */
+
     .articulo .descripcionProducto{
         width: 100%;
         margin-bottom: 10px;
     }
 
+    
     .dialogDetalle{
         border: none;
         border-radius: 10px;
@@ -482,21 +484,23 @@ dialog #hide:hover {
         box-sizing: border-box;
         text-align: center;
     }
+    
+    /* Carrito de compras */
+
 
     .dialogCar .content{
         margin-left: 0px;
-        width:95vw;
-        height: 90vh;
+        width:100%;
+        height: 70vh;
         border: none;
-        
     }
 
     .allCar{
         margin-left: -20px;
         box-sizing: border-box;
         padding-top: 110px;
-        height: 71%;
-        width: 90%;
+        height: 60%;
+        width: 100%;
         /* gap: 8px; */
         overflow-y: scroll;
     }
@@ -531,6 +535,7 @@ dialog #hide:hover {
         border: 1px solid #45474B;
         height: 10vh;
         width: 80%;
+        margin-bottom: 0px;
   
     }
 
@@ -574,6 +579,10 @@ dialog #hide:hover {
     header nav a:hover{
         /* outline: 1px solid #495E57; */
         background-color: initial;
+    }
+
+    .dialogCar h2{
+        /* margin-top: -25px; */
     }
 
 }
