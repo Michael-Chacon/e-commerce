@@ -24,3 +24,9 @@
 ## Cómo Contribuir
 
 ¡Tu contribución es valiosa! Si tienes sugerencias, correcciones o nuevas características que quisieras añadir, no dudes en abrir un "issue" o enviar un "pull request".
+
+
+
+![](https://github.com/Michael-Chacon/e-commerce/blob/main/storage/gifs/ecodesk.gif)
+
+![](https://github.com/Michael-Chacon/e-commerce/blob/main/storage/gifs/ecogif.gif)
