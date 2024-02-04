@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+}
+
+.mainIndex{
+    
+    margin: 120px 350px;
+    /* background-color: rgb(187, 184, 184); */
+    /* height: 80vh; */
+}
+
+.container{
+    /* background: black; */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    justify-content: stretch;
+    gap: 15px;
+}
+
+
+.fotoIndex{
+    border: 2px solid rgb(61, 60, 60);
+    background-color: #19191a;
+    border-radius: 20px;
+}
+
+.fotoIndex:first-child{
+    background-image: url(../storage/img/celulares/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1 / 3;
+}
+
+.fotoIndex:nth-child(5){
+    background-image: url(../storage/img/main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    grid-row: 2 / 4
+}
+
+.fotoIndex:nth-child(2){
+    background-image: url(../storage/img/pcs/main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fotoIndex:nth-child(3){
+    background-image: url(../storage/img/audifonos/maina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fotoIndex:nth-child(4){
+    background-image: url(../storage/img/monitores/main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.fotoIndex:nth-child(6){
+    background-image: url(../storage/img/audifonos/mainb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fotoIndex:nth-child(7){
+    background-image: url(../storage/img/zapatos/main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

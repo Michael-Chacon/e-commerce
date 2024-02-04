@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="storage/img/icono.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>E-ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <i class="bx bx-menu-alt-left btnMenu"></i>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="computadores.html">Computadores</a>
+        <a href="audifonos.html">Audifonos</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="monitores.html">Monitores</a>
+        <a href="tv.html">TVs</a>
+        <a href="zapatos.html">Zapatos</a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+      </nav>
+      <div>
+        <i class="bx bxs-cart" id="mostrar"><sup>3</sup></i>
+      </div>
+    </header>
+
+    <dialog class="dialogCar" id="car">
+      <section class="content">
+        <i id="cerrar" class="bx bx-x"></i>
+        <h2>Detalles</h2>
+        <section class="allCar">
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto 1</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="total">
+          <h3>Total:</h3>
+          <div class="cancelar">
+            <h4>$100.000</h4>
+            <button>Pagar</button>
+          </div>
+        </section>
+      </section>
+    </dialog>
+
+    <dialog class="dialogDetalle" id="dialog">
+      <section>
+        <img class="imgDialog" src="storage/img/aMain.jpg" alt="telescopio" />
+        <div class="nombreStart">
+          <h4>Nombre del producto</h4>
+          <span class="stars"
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i
+            ><i class="bx bx-star"></i
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolorem!
+        </p>
+        <div class="preciosDialog">
+          <h4>$ 100.000</h4>
+          <del> $99.99</del>
+        </div>
+        <form action="#">
+          <input
+            readonly
+            type="number"
+            value="3"
+            name="cantidad"
+            placeholder="Cantidad"
+          />
+          <button type="text" class="submit">Agregar</button>
+        </form>
+        <button id="hide">Cerrar</button>
+      </section>
+    </dialog>
+
+    <main>
+      <article class="articulo" id="telescopios">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/a1.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/a2.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/a3.jpg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/aMain.jpg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">PowerSeeker 127EQ</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            El Celestron PowerSeeker 127EQ es un telescopio potente y fácil de
+            usar. Este reflector newtoniano de 5.000 in ofrece suficiente
+            capacidad de recolección de luz para ver planetas, cráteres de la
+            Luna, estrellas distantes, la Nebulosa de Orión y más
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 144.99</h3>
+            <span><del class="precioViejo">$219.95</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="show">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/bMain.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/b1.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/b2.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/b3.jpg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/bMain.jpg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">21062 AstroMaster</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            El reflector newtoniano Celestron AstroMaster 130EQ es ideal como
+            telescopio para principiantes. Cuenta con óptica de vidrio
+            totalmente revestida, un trípode de altura completa, 2 oculares y un
+            buscador de puntos rojos StarPointer.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 351.49</h3>
+            <span><del class="precioViejo">$221.35</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/cMain.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/c1.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/c2.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/c3.jpg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/c2.jpg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">ESSENWI 130EQ</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            El telescopio ESSENWI 130EQ es un potente telescopio reflecor para
+            astronomía de adultos. Marco de estudio de alta calidad y lente
+            objetivo características de óptica de vidrio totalmente recubierto
+            que te traerá un viaje perfecto al universo.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 289.98</h3>
+            <span><del class="precioViejo">$131.44</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/dMain.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/d1.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/d2.jpg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/d3.jpg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/dMain.jpg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Koolpte 3.543</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Este telescopio cuenta con una apertura de 3.543 in y un diseño de
+            refracción de distancia focal de 35.433 in, proporcionando un
+            rendimiento óptico excepcional que le permite observar fácilmente
+            objetos del espacio profundo en el universo.M
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 249.99</h3>
+            <span><del class="precioViejo">$175.14</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

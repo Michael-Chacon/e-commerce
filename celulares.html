@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="storage/img/icono.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>E-ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <i class="bx bx-menu-alt-left btnMenu"></i>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="telescopios.html">Telescopios</a>
+        <a href="computadores.html">Computadores</a>
+        <a href="audifonos.html">Audifonos</a>
+        <a href="monitores.html">Monitores</a>
+        <a href="tv.html">TVs</a>
+        <a href="zapatos.html">Zapatos</a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+      </nav>
+      <div>
+        <i class="bx bxs-cart" id="mostrar"><sup>3</sup></i>
+      </div>
+    </header>
+
+    <dialog class="dialogCar" id="car">
+      <section class="content">
+        <i id="cerrar" class="bx bx-x"></i>
+        <h2>Detalles</h2>
+        <section class="allCar">
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto 1</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="total">
+          <h3>Total:</h3>
+          <div class="cancelar">
+            <h4>$100.000</h4>
+            <button>Pagar</button>
+          </div>
+        </section>
+      </section>
+    </dialog>
+
+    <dialog class="dialogDetalle" id="dialog">
+      <section>
+        <img class="imgDialog" src="storage/img/aMain.jpg" alt="telescopio" />
+        <div class="nombreStart">
+          <h4>Nombre del producto</h4>
+          <span class="stars"
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i
+            ><i class="bx bx-star"></i
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolorem!
+        </p>
+        <div class="preciosDialog">
+          <h4>$ 100.000</h4>
+          <del> $99.99</del>
+        </div>
+        <form action="#">
+          <input
+            readonly
+            type="number"
+            value="3"
+            name="cantidad"
+            placeholder="Cantidad"
+          />
+          <button type="text" class="submit">Agregar</button>
+        </form>
+        <button id="hide">Cerrar</button>
+      </section>
+    </dialog>
+
+    <main>
+      <article class="articulo" id="telescopios">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/amain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/a1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/a2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/a3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/celulares/amain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Galaxy S24 Ultra</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Te presentamos el Galaxy S24 Ultra 5G, la forma definitiva de Galaxy
+            Ultra con un nuevo exterior de titanio y una pantalla plana de
+            6.8"., Es una maravilla absoluta del diseño.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$899.99</h3>
+            <span><del class="precioViejo">$700.95</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="show">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/bMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/b1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/b2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/b3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/celulares/bMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Xiaomi Poco F5 Pro</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Fotografía profesional en tu bolsillo Descubre infinitas
+            posibilidades para tus fotos con las 3 cámaras principales de tu
+            equipo. Pon a prueba tu creatividad y juega con la iluminación,
+            diferentes planos y efectos para obtener grandes resultados.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$599.49</h3>
+            <span><del class="precioViejo">$439.35</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/cMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/c1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/c2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/c3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/celulares/cMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Xiaomi Poco X6 Pro</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            tipo de - equipo totalmente nuevo en caja. - libre de fábrica para
+            cualquier compañía. - procesador: mediatek dimensity 8300 ultra
+            (hasta 3.35 ghz) - gpu: mali g615-mc6 - pantalla: amoled dotdisplay
+            crystalres 1,5 k flow de 6,67" -
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$642.98</h3>
+            <span><del class="precioViejo">$549.44</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/dMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/d1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/d2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/celulares/d3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/celulares/dMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Motorola G54</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            crea una nueva dimensión de audio siente el sonido multidimensional
+            que ofrece el audio dolby atmos®1 rendimiento sistema operativo
+            android 13 memoria ram 8 gb procesador mtk dimensity 7020 2x arm
+            cortex-a78 @ 2.2 ghz 6x arm cortex-a55 @ 2.0 ghz
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$599.99</h3>
+            <span><del class="precioViejo">$464.14</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

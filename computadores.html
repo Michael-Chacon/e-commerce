@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="storage/img/icono.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>E-ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <i class="bx bx-menu-alt-left btnMenu"></i>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="telescopios.html">Telescopios</a>
+        <a href="audifonos.html">Audifonos</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="monitores.html">Monitores</a>
+        <a href="tv.html">TVs</a>
+        <a href="zapatos.html">Zapatos</a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+      </nav>
+      <div>
+        <i class="bx bxs-cart" id="mostrar"><sup>3</sup></i>
+      </div>
+    </header>
+
+    <dialog class="dialogCar" id="car">
+      <section class="content">
+        <i id="cerrar" class="bx bx-x"></i>
+        <h2>Detalles</h2>
+        <section class="allCar">
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto 1</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="total">
+          <h3>Total:</h3>
+          <div class="cancelar">
+            <h4>$100.000</h4>
+            <button>Pagar</button>
+          </div>
+        </section>
+      </section>
+    </dialog>
+
+    <dialog class="dialogDetalle" id="dialog">
+      <section>
+        <img class="imgDialog" src="storage/img/aMain.jpg" alt="telescopio" />
+        <div class="nombreStart">
+          <h4>Nombre del producto</h4>
+          <span class="stars"
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i
+            ><i class="bx bx-star"></i
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolorem!
+        </p>
+        <div class="preciosDialog">
+          <h4>$ 100.000</h4>
+          <del> $99.99</del>
+        </div>
+        <form action="#">
+          <input
+            readonly
+            type="number"
+            value="3"
+            name="cantidad"
+            placeholder="Cantidad"
+          />
+          <button type="text" class="submit">Agregar</button>
+        </form>
+        <button id="hide">Cerrar</button>
+      </section>
+    </dialog>
+
+    <main>
+      <article class="articulo" id="telescopios">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/aMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/a1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/a2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/a3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/pcs/aMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">XPG Xenia Xe</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            XPG e Intel han colaborado una vez más, esta vez para lanzar un
+            ultraportátil para un estilo de vida de juego de primera calidad con
+            la certificación EVO™: XPG XENIA Xe. El ultraportátil está equipado
+            con procesadores Intel Core™ i7 de 11.ª generación
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 799.99</h3>
+            <span><del class="precioViejo">$699.95</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="show">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/bMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/b1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/b2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/b3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/pcs/bMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Acer Nitro 5</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Procesador: Intel core i5 Memoria RAM: 8GB Unidad de estado sólido
+            SSD: 512GB Resolución de la pantalla: FHD (1.920 x 1.080) Tamaño de
+            la pantalla: 15.6 pulgadas
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 899.49</h3>
+            <span><del class="precioViejo">$699.35</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/cMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/c1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/c2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/c3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/pcs/cMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">COMPUTADOR GAMER JANUS</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            janus amd ryzen 5-5600g 3,9 ghz hasta 4,4 ghz /l3 16mb/7nm/6
+            nucleos/12 hilos/radeon™ graphics 1900 mhz/desbloqueado, board
+            a520m, 2 socket, disco solido 512gb m.2 pci express, ddr4 8gb rgb,
+            caja janus ax-6 gamer vidrio templado ventiladores argb, fuente 350w
+            reales
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 828.98</h3>
+            <span><del class="precioViejo">$665.44</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/dMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/d1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/d2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/pcs/d3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/pcs/dMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">GAMER AMD RYZEN</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            color negro procesador ryzen 7 5700g n.º de núcleos de cpu: 8 n.º de
+            subprocesos: 16 velocidad básica del procesador: 3.8 ghz velocidad
+            máxima: hasta 4.6 ghz gráficos: amd radeon graphics memoria ram: pc
+            ddr4 16gb rgb 3200mhz.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$ 500.99</h3>
+            <span><del class="precioViejo">$475.14</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

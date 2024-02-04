@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="storage/img/icono.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>E-ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <i class="bx bx-menu-alt-left btnMenu"></i>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="telescopios.html">Telescopios</a>
+        <a href="computadores.html">Computadores</a>
+        <a href="audifonos.html">Audifonos</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="monitores.html">Monitores</a>
+        <a href="tv.html">TVs</a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+        <a href="#">producto </a>
+      </nav>
+      <div>
+        <i class="bx bxs-cart" id="mostrar"><sup>3</sup></i>
+      </div>
+    </header>
+
+    <dialog class="dialogCar" id="car">
+      <section class="content">
+        <i id="cerrar" class="bx bx-x"></i>
+        <h2>Detalles</h2>
+        <section class="allCar">
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto 1</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+          <article class="articuloCar">
+            <i class="bx bxs-trash"></i>
+            <img
+              class="imgProductCar"
+              src="storage/img/aMain.jpg"
+              alt="angulos del producto"
+            />
+            <div class="infoProducto">
+              <h4>Nombre del producto</h4>
+              <div class="cantPrecio">
+                <input readonly type="number" value="3" />
+                <h4>$100.000</h4>
+                <small><del> $99.999</del></small>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="total">
+          <h3>Total:</h3>
+          <div class="cancelar">
+            <h4>$100.000</h4>
+            <button>Pagar</button>
+          </div>
+        </section>
+      </section>
+    </dialog>
+
+    <dialog class="dialogDetalle" id="dialog">
+      <section>
+        <img class="imgDialog" src="storage/img/aMain.jpg" alt="telescopio" />
+        <div class="nombreStart">
+          <h4>Nombre del producto</h4>
+          <span class="stars"
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i
+            ><i class="bx bx-star"></i
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolorem!
+        </p>
+        <div class="preciosDialog">
+          <h4>$ 100.000</h4>
+          <del> $99.99</del>
+        </div>
+        <form action="#">
+          <input
+            readonly
+            type="number"
+            value="3"
+            name="cantidad"
+            placeholder="Cantidad"
+          />
+          <button type="text" class="submit">Agregar</button>
+        </form>
+        <button id="hide">Cerrar</button>
+      </section>
+    </dialog>
+
+    <main>
+      <article class="articulo" id="telescopios">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/amain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/a1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/a2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/a3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/zapatos/amain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Monserrate Ref</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Tenis en bota 100% en cuero de la mejor calidad, su combinación
+            intrépida de colores, hará que tu estilo sofisticado no pase
+            desapercibido, tienen mucha clase, exclusividad y personalidad...¡Tu
+            outfit sera espectacular!.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$119.99</h3>
+            <span><del class="precioViejo">$100.95</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="show">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/bMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/b1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/b2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/b3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/zapatos/bMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Nike Court Royale</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Ya no más calzado incómodo o incorrecto. Con nuestros consejos,
+            podrás asegurarte de que cada paso que des sea cómodo y estilizado.
+            No pierdas más tiempo probando tallas equivocadas.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$419.49</h3>
+            <span><del class="precioViejo">$339.35</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/cMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/c1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/c2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/c3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/zapatos/cMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">New Balance</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Los tenis New Balance son la opción perfecta para aquellos que
+            desean una moda actual y un calzado cómodo para el día a día
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$612.98</h3>
+            <span><del class="precioViejo">$449.44</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section class="imgProductos">
+          <div class="angulos">
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/dMain.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/d1.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/d2.jpeg"
+              alt="angulos del producto"
+            />
+            <img
+              class="imgAngulo"
+              src="storage/img/zapatos/d3.jpeg"
+              alt="angulos del producto"
+            />
+          </div>
+          <div class="principal">
+            <img
+              class="imgPrincipal"
+              src="storage/img/zapatos/dMain.jpeg"
+              alt="Imagen principal"
+            />
+          </div>
+        </section>
+
+        <section class="descripcionProducto">
+          <h2 class="nombreProducto">Running Charged Rogue</h2>
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <p class="descripcion">
+            Somos la marca deportiva que te hace mejor, ¿Cómo? Inspirando a
+            todos los atletas y apasionados por el deporte con soluciones de
+            alto rendimiento que no sabían que necesitaban, pero después de
+            probarlas no se pueden imaginar viviendo sin ellas.
+          </p>
+          <div class="precios">
+            <h3 class="precioActual">$399.99</h3>
+            <span><del class="precioViejo">$264.14</del></span>
+          </div>
+          <div class="btnObtener">
+            <button id="">Obtener</button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

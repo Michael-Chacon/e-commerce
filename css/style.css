@@ -107,8 +107,7 @@ header nav a{
 }
 
 header nav a:hover{
-    outline: 1px solid #495E57;
-    background-color: #F5F7F8;
+    background-color: #F4CE14;
     border-radius: 5px;
 }
 
