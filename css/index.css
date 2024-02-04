@@ -286,10 +286,6 @@ footer p{
 }
 
 @media(max-width: 560px){
-    /* body{
-        zoom: 80%;
-    } */
-
     .mainIndex{
         margin-left:85px;
         width: 100%;

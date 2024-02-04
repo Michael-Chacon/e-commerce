@@ -90,7 +90,7 @@ nav::-webkit-scrollbar {
 nav::-webkit-scrollbar-track {
     background: #fde66750;
     border-radius: 2px;
-    border: 1px solid #F4CE14
+    /* border: 1px solid #F4CE14 */
 }
 
 nav::-webkit-scrollbar-thumb {
