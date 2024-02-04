@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link
       rel="shortcut icon"
@@ -17,137 +16,124 @@
     <title>E-ecommerce</title>
   </head>
   <body>
-    <header>
-      <i class="bx bx-menu-alt-left btnMenu"></i>
-      <nav class="menu">
-        <a href="telescopios.html">Telescopios</a>
-        <a href="computadores.html">Computadores</a>
-        <a href="audifonos.html">Audifonos</a>
-        <a href="celulares.html">Celulares</a>
-        <a href="monitores.html">Monitores</a>
-        <a href="tv.html">TVs</a>
-        <a href="zapatos.html">Zapatos</a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-        <a href="#">producto </a>
-      </nav>
-      <div>
-        <i class="bx bxs-cart" id="mostrar"><sup>3</sup></i>
-      </div>
-    </header>
-
-    <dialog class="dialogCar" id="car">
-      <section class="content">
-        <i id="cerrar" class="bx bx-x"></i>
-        <h2>Detalles</h2>
-        <section class="allCar">
-          <article class="articuloCar">
-            <i class="bx bxs-trash"></i>
-            <img
-              class="imgProductCar"
-              src="storage/img/aMain.jpg"
-              alt="angulos del producto"
-            />
-            <div class="infoProducto">
-              <h4>Nombre del producto 1</h4>
-              <div class="cantPrecio">
-                <input readonly type="number" value="3" />
-                <h4>$100.000</h4>
-                <small><del> $99.999</del></small>
-              </div>
-            </div>
-          </article>
-          <article class="articuloCar">
-            <i class="bx bxs-trash"></i>
-            <img
-              class="imgProductCar"
-              src="storage/img/aMain.jpg"
-              alt="angulos del producto"
-            />
-            <div class="infoProducto">
-              <h4>Nombre del producto</h4>
-              <div class="cantPrecio">
-                <input readonly type="number" value="3" />
-                <h4>$100.000</h4>
-                <small><del> $99.999</del></small>
-              </div>
-            </div>
-          </article>
-          <article class="articuloCar">
-            <i class="bx bxs-trash"></i>
-            <img
-              class="imgProductCar"
-              src="storage/img/aMain.jpg"
-              alt="angulos del producto"
-            />
-            <div class="infoProducto">
-              <h4>Nombre del producto</h4>
-              <div class="cantPrecio">
-                <input readonly type="number" value="3" />
-                <h4>$100.000</h4>
-                <small><del> $99.999</del></small>
-              </div>
-            </div>
-          </article>
-          <article class="articuloCar">
-            <i class="bx bxs-trash"></i>
-            <img
-              class="imgProductCar"
-              src="storage/img/aMain.jpg"
-              alt="angulos del producto"
-            />
-            <div class="infoProducto">
-              <h4>Nombre del producto</h4>
-              <div class="cantPrecio">
-                <input readonly type="number" value="3" />
-                <h4>$100.000</h4>
-                <small><del> $99.999</del></small>
-              </div>
-            </div>
-          </article>
-          <article class="articuloCar">
-            <i class="bx bxs-trash"></i>
-            <img
-              class="imgProductCar"
-              src="storage/img/aMain.jpg"
-              alt="angulos del producto"
-            />
-            <div class="infoProducto">
-              <h4>Nombre del producto</h4>
-              <div class="cantPrecio">
-                <input readonly type="number" value="3" />
-                <h4>$100.000</h4>
-                <small><del> $99.999</del></small>
-              </div>
-            </div>
-          </article>
-        </section>
-        <section class="total">
-          <h3>Total:</h3>
-          <div class="cancelar">
-            <h4>$100.000</h4>
-            <button>Pagar</button>
-          </div>
-        </section>
+    <aside class="aside" id="aside">
+      <section class="head">
+        <div class="profile">
+          <p>Alexis</p>
+        </div>
+        <i id="menuIndex" class="bx bx-menu"></i>
       </section>
-    </dialog>
+
+      <section class="options">
+        <!-- <div href="#" id="mostrar">
+          <i class="bx bxs-cart"><sup>3</sup></i>
+          <span class="option">Carrito</span>
+        </div> -->
+        <a href="telescopios.html" class="items">
+          <img src="storage/iconos/telescope.png" alt="" />
+          <span class="option">Telescopios</span>
+        </a>
+        <a href="computadores.html" class="items">
+          <img src="storage/iconos/pc.png" alt="" />
+          <span class="option">Computadores</span>
+        </a>
+        <a href="audifonos.html" class="items">
+          <img src="storage/iconos/audifonos.png" alt="" />
+          <span class="option">Audifonos</span>
+        </a>
+        <a href="monitores.html" class="items">
+          <img src="storage/iconos/monitor.png" alt="" />
+          <span class="option">Monitores</span>
+        </a>
+        <a href="tv.html" class="items">
+          <img src="storage/iconos/tv.png" alt="" />
+          <span class="option">TVs</span>
+        </a>
+        <a href="zapatos.html" class="items">
+          <img src="storage/iconos/zapatos.png" alt="" />
+          <span class="option">Zapatos</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+        <a href="#" class="items">
+          <img src="storage/iconos/nada.png" alt="" />
+          <span class="option">Vacío</span>
+        </a>
+      </section>
+    </aside>
 
     <main class="mainIndex">
-      <section class="container">
-        <div class="fotoIndex">lorem</div>
-        <div class="fotoIndex">2</div>
-        <div class="fotoIndex">3</div>
-        <div class="fotoIndex">4</div>
-        <div class="fotoIndex">5</div>
-        <div class="fotoIndex">6</div>
-        <div class="fotoIndex">7</div>
-        <!-- <div class="fotoIndex">8</div>
-        <div class="fotoIndex">9</div> -->
+      <section class="home">
+        <div class="texto">
+          <h1>
+            Conecta con el futuro: tecnología que transforma, precios que
+            sorprenden
+          </h1>
+          <p>
+            Descubre el futuro en nuestro ecommerce: tecnología innovadora a
+            precios sorprendentes. Bienvenido a la revolución digital, ¡explora
+            y conecta con lo mejor!
+          </p>
+        </div>
+        <div class="web">
+          <img src="storage/iconos/web.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="devices">
+        <h2>E-commerce para diferentes dispositivos</h2>
+        <article class="categories">
+          <div class="formatos">
+            <img src="storage/iconos/mobile.svg" alt="" />
+          </div>
+          <div class="formatos">
+            <img src="storage/iconos/pc2.svg" alt="" />
+          </div>
+          <div class="formatos">
+            <img src="storage/iconos/tv.svg" alt="" />
+          </div>
+        </article>
+      </section>
+
+      <section class="destacados">
+        <h2>Productos destacados</h2>
+        <article class="container">
+          <div class="fotoIndex"></div>
+          <div class="fotoIndex"></div>
+          <div class="fotoIndex"></div>
+          <div class="fotoIndex"></div>
+          <div class="fotoIndex"></div>
+          <div class="fotoIndex"></div>
+          <div class="fotoIndex"></div>
+          <!-- <div class="fotoIndex">8</div>
+            <div class="fotoIndex">9</div> -->
+        </article>
       </section>
     </main>
 
@@ -155,6 +141,6 @@
       <p>Footer</p>
     </footer> -->
 
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
