@@ -286,6 +286,7 @@ footer p{
 }
 
 @media(max-width: 560px){
+
     .mainIndex{
         margin-left:85px;
         width: 100%;
@@ -297,17 +298,32 @@ footer p{
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        text-align: justify;
         /* gap: 100px; */
     }
 
-    .home .web{
-        display: none;
+    .home .texto{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
+
+    /* .home .web{
+        display: none;
+    } */
 
     .devices{
         text-align: start;
         width: 100%;
+        /* height: 100vh; */
         /* border: 1px solid black; */
+    }
+
+    .devices h2{
+        border: 1px solid red;
     }
     
     .categories{
