@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>E-ecommerce</title>
   </head>
   <body>
@@ -26,14 +27,10 @@
         <div class="profile">
           <p>Alexis</p>
         </div>
-        <i id="menuIndex" class=" bx bx-menu-alt-left"></i>
+        <i id="menuIndex" class="bx bx-menu-alt-left"></i>
       </section>
 
       <section class="options">
-        <!-- <div href="#" id="mostrar">
-          <i class="bx bxs-cart"><sup>3</sup></i>
-          <span class="option">Carrito</span>
-        </div> -->
         <a href="telescopios.html" class="items">
           <img src="storage/iconos/telescope.png" alt="" />
           <span class="option">Telescopios</span>
@@ -111,7 +108,13 @@
           </p>
         </div>
         <div class="web">
-          <img src="storage/iconos/web.svg" alt="" />
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="800"
+            src="storage/iconos/web.svg"
+            alt=""
+          />
         </div>
       </section>
 
@@ -150,6 +153,6 @@
       <p>Footer</p>
     </footer> -->
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
   </body>
 </html>

@@ -22,3 +22,7 @@ window.cerrar.addEventListener("click", () => {
   window.car.close();
   console.log("siiii");
 });
+
+AOS.init({
+  offset: 1,
+});
