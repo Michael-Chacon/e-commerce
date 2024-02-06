@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 body{
+    margin: 0;
     background-color: white;
-    font-size: 15px;
     color: #495E57;
     font-family: 'Fira Code', monospace;
 }
@@ -277,17 +277,65 @@ aside{
     background-size: contain;
 }
 
-footer{
-    width: 100%;
-    height: 20vh;
-    background-color: #45474B;
+
+.dialogCar .content{
+    height: 80vh;
+    border: none;
+    
 }
 
-footer p{
-    font-size: 3rem;
-    color: white;
-    text-align: center;
+.dialogCar .content i{
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: color 0.5s ease;
 }
+
+.dialogCar .content i:hover{
+   cursor: pointer;
+}
+
+.allCar{
+    box-sizing: border-box;
+    height: 71%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.allCar img{
+    object-fit: contain;
+}
+
+.dialogCar .content .total{
+    margin-top: 5px;
+    border: 1px solid #45474B;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.dialogCar .content .total .cancelar button{
+    border: none;
+    background-color: #F4CE14;
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.dialogCar .content .total .cancelar button:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #FDE767;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 
 @media(max-width: 560px){
 
@@ -339,8 +387,6 @@ footer p{
         width: 100%;
     }
 
-    
-    
     .categories{
         margin-top: 100px;
         display: flex;
@@ -384,8 +430,35 @@ footer p{
    }
 
    .aside{
-    width: 70px;
-    transition: all .4s ease;
-}
+        width: 70px;
+        transition: all .4s ease;
+    }
+
+    /* Carrito */
+
+    .dialogCar .content{
+        margin-left: 0px;
+        width: 85vw;
+        height: 70vh;
+    }
+
+    .allCar{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+        width: 100%;
+        gap: 10px;
+        overflow-y: scroll;
+    }
+
+    .dialogCar .content .total{
+        box-sizing: border-box;
+        padding: 0 10px;
+        border: 1px solid #45474B;
+        height: 11vh;
+        width: 100%;  
+        margin-bottom: 50px;
+    }
     
 }

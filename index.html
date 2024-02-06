@@ -19,8 +19,26 @@
   <body>
     <header>
       <i class="bx bx-menu" id="menuGeneral"></i>
-      <i class="bx bxs-cart" id="mostrar"><sup>5</sup></i>
+      <i class="bx bxs-cart" id="mostrar"><sup>0</sup></i>
     </header>
+
+    <dialog class="dialogCar" id="car">
+      <section class="content">
+        <i id="cerrar" class="bx bx-x"></i>
+        <h2>Detalles</h2>
+        <section class="allCar">
+          <img src="storage/iconos/empty.svg" alt="" />
+        </section>
+        <p style="text-align: center; color: red">El carrito está vacío</p>
+        <section class="total">
+          <h3>Total:</h3>
+          <div class="cancelar">
+            <h4>$000.000</h4>
+            <button>Pagar</button>
+          </div>
+        </section>
+      </section>
+    </dialog>
 
     <aside class="aside" id="aside">
       <section class="head">
@@ -143,15 +161,9 @@
           <div class="fotoIndex"></div>
           <div class="fotoIndex"></div>
           <div class="fotoIndex"></div>
-          <!-- <div class="fotoIndex">8</div>
-            <div class="fotoIndex">9</div> -->
         </article>
       </section>
     </main>
-
-    <!-- <footer>
-      <p>Footer</p>
-    </footer> -->
 
     <script src="js/index.js" defer></script>
   </body>

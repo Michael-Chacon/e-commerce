@@ -1,3 +1,9 @@
+> [!NOTE]
+>
+> El modal que se despliega al dar clic en le botón Obtener solo funciona en el primer producto de cada categoría
+
+
+
 # E-Commerce de Productos de Tecnología
 
 ¡Bienvenido/a a nuestro E-Commerce de productos tecnológicos! Este proyecto ha sido desarrollado con HTML y CSS, aprovechando las capacidades de Flexbox y Grid para un diseño moderno y atractivo.
